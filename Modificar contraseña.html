@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modificar Contraseña</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+			background-color: #f2f2f2;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			width: 400px;
+			font-family: Arial, sans-serif;
+		}
+
+		input[type="password"] {
+			padding: 10px;
+			margin: 10px 0;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+			font-size: 16px;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+
+		label {
+			margin: 10px 0;
+			font-size: 16px;
+			font-weight: bold;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<h2>Modificar Contraseña</h2>
+	<form action="modificar.php" method="post">
+		<label for="actual">Contraseña Actual:</label>
+		<input type="password" id="actual" name="actual" required>
+
+		<label for="nueva">Contraseña Nueva:</label>
+		<input type="password" id="nueva" name="nueva" required>
+
+		<label for="confirmar">Confirmar Contraseña:</label>
+		<input type="password" id="confirmar" name="confirmar" required>
+
+		<input type="submit" value="Modificar">
+        
+	</form>
+
+</body>
+</html>
