@@ -2,7 +2,17 @@
 <html>
 <head>
 	<title>Iniciar Sesión</title>
+	<link rel="shotcut icon" href="logo/logo silque pmg.png" type="image/x-icon">
+	<link rel="stylesheet" href="estilos.css">
 	<style>
+		/* Agregamos un contenedor que centra el formulario */
+		.contenedor-formulario {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
 		form {
 			display: flex;
 			flex-direction: column;
@@ -37,7 +47,7 @@
 
 		input[type="submit"]:hover {
 			background-color: #3e8e41;
-		}
+			}
 
 		label {
 			margin: 10px 0;
@@ -48,16 +58,32 @@
 	</style>
 </head>
 <body>
-	<h2>Iniciar Sesión</h2>
-	<form action="iniciar_sesion.php" method="post">
-		<label for="email">Correo electrónico:</label>
-		<input type="email" id="email" name="email" required>
+	<header>
+		<nav class="navbar">
+		  <div class="contenedor">
+			<a href="inicio.html">Inicio</a>
+			<a href="carrito de compras.html">Carrito de compras</a>
+			<center href="#"> <img src="logo/logo silque pmg.png" width="100" height="100"alt="logo" class="center"></center>
+			<a href="venta por categoria.html">Categorias de libros</a>
+			<a href="ver perfil de usuario.html">Perfil </a>
+			<a href="inicio de sesion.html">Inicio de sesion y registrar </a>
+		  </div>
+		</nav>
+	</header>
+	
+	<!-- Agregamos el contenedor y centramos el formulario -->
+	<div class="contenedor-formulario">
+		<h2>Iniciar Sesión</h2>
+		<form action="iniciar_sesion.php" method="post">
+			<label for="email">Correo electrónico:</label>
+			<input type="email" id="email" name="email" required>
 
-		<label for="password">Contraseña:</label>
-		<input type="password" id="password" name="password" required>
+			<label for="password">Contraseña:</label>
+			<input type="password" id="password" name="password" required>
 
-		<input type="submit" value="Iniciar Sesión">
-        <a button  href="registrar usuario.html" class="vinculo" >Registrar usuario</a button >
-	</form>
+			<input type="submit" value="Iniciar Sesión">
+			<a button href="registrar usuario.html" class="vinculo">Registrar usuario</a button >
+		</form>
+	</div>
 </body>
 </html>
