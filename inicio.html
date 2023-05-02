@@ -5,10 +5,79 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SilQUE LIBROS</title>
-	<link rel="shotcut icon" href="logo/logo silque pmg.png" type="image/x-icon">
+	<link rel="shortcut icon" href="logo/logo-silque-pmg.png" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="CSS/css/bootstrap.css">
+</head>
+<style>
+	.container {
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	header {
+		background-color: #333;
+		padding: 10px;
+		text-align: center;
+		color: #fff;
+	}
+
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	.navbar a {
+		color: #fff;
+		text-decoration: none;
+		margin: 0 10px;
+	}
+
+	.center {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.container h6 {
+		margin-bottom: 20px;
+		line-height: 1.5;
+	}
+
+	main {
+		margin-bottom: 20px;
+	}
+
+	.post {
+		margin-bottom: 20px;
+	}
+
+	.post p {
+		margin-bottom: 10px;
+	}
+
+	.footer {
+		background-color: #333;
+		padding: 10px;
+		text-align: center;
+		color: #fff;
+	}
+
+	.footer img {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+		height: auto;
+	}
+
+	.footer .navbar {
+		margin-top: 20px;
+	}
+</style>
 </head>
 <body>
 
@@ -16,37 +85,40 @@
 		<nav class="navbar">
 			<div class="contenedor">
 				<a href="inicio.html">Inicio</a>
-				<a href="carrito de compras.html">Carrito de compras</a>
-				<center href="#"> <img src="logo/logo silque pmg.png" width="100" height="100"alt="logo" class="center"></center>
-				<a href="venta por categoria.html">Categorias de libros</a>
-				<a href="ver perfil de usuario.html">Perfil </a>
-				<a href="inicio de sesion.html">Inicio de sesion y registrar </a>
+				<a href="carrito-de-compras.html">Carrito de compras</a>
+				<a href="#"><img src="logo/logo silque pmg.png" width="100" height="100" alt="logo" class="center"></a>
+				<a href="venta-por-categoria.html">Categorías de libros</a>
+				<a href="ver-perfil-de-usuario.html">Perfil</a>
+				<a href="inicio-de-sesion.html">Inicio de sesión y registrar</a>
 			</div>
 		</nav>
 		<section class="container">
-			<img src="imagenes inicio/wallpaperflare.com_wallpaper.jpg" alt="imagen con texto">
-			<H6> Bienvenidos a nuestra librería en línea, donde podrás encontrar la mejor selección 
+			<img src="logo/logo silque pmg.png" alt="imagen con texto">
+			<h6> Bienvenidos a nuestra librería en línea, donde podrás encontrar la mejor selección 
 				de libros para todo tipo de gustos y edades. En nuestro catálogo encontrarás libros 
 				de diferentes géneros y autores, desde clásicos hasta las últimas novedades 
 				literarias.<br>
 	
-	Contamos con secciones especializadas para facilitar la búsqueda de los libros que te interesan. 
-	Por ejemplo, nuestra sección de ficción ofrece una amplia variedad de novelas, cuentos y poesía, 
-	mientras que nuestra sección de no ficción tiene libros sobre historia, ciencia, tecnología, 
-	negocios y más. Si buscas libros para niños y jóvenes, nuestra sección de libros infantiles y 
-	juveniles es perfecta para ti.<br>
+				Contamos con secciones especializadas para facilitar la búsqueda de los libros que te interesan. 
+				Por ejemplo, nuestra sección de ficción ofrece una amplia variedad de novelas, cuentos y poesía, 
+				mientras que nuestra sección de no ficción tiene libros sobre historia, ciencia, tecnología, 
+				negocios y más. Si buscas libros para niños y jóvenes, nuestra sección de libros infantiles y 
+				juveniles es perfecta para ti.<br>
 	
-	Además de nuestra selección de libros, ofrecemos una variedad de servicios de ayuda al cliente 
-	para hacer tu experiencia de compra más fácil y satisfactoria. Nuestro equipo de expertos está 
-	disponible para brindarte asesoramiento personalizado y recomendaciones sobre qué libros pueden 
-	interesarte. Si tienes preguntas o necesitas ayuda en cualquier momento durante el proceso de 
-	compra, nuestro servicio de atención al cliente está disponible para responder cualquier pregunta
-	o inquietud que puedas tener.<br>
+				Además de nuestra selección de libros, ofrecemos una variedad de servicios de ayuda al cliente 
+				para hacer tu experiencia de compra más fácil y satisfactoria. Nuestro equipo de expertos está 
+				disponible para brindarte asesoramiento personalizado y recomendaciones sobre qué libros pueden 
+				interesarte. Si tienes preguntas o necesitas ayuda en cualquier momento durante el proceso de 
+				compra, nuestro servicio de atención al cliente está disponible para responder cualquier pregunta
+				o inquietud que puedas tener.<br>
 	
-	También ofrecemos envío a domicilio para que puedas recibir tus libros directamente en la comodidad
-	de tu hogar. Ya sea que busques libros para disfrutar en tu tiempo libre, para estudiar o para 
-	regalar a alguien especial, nuestra librería en línea tiene todo lo que necesitas para satisfacer
-	tus necesidades literarias. ¡Explora nuestro catálogo y encuentra el libro perfecto para ti! (H6)</H6>
+				También ofrecemos envío a domicilio para que puedas recibir tus libros directamente en la comodidad
+				de tu hogar. Ya sea que busques libros para disfrutar en tu tiempo libre, para estudiar o para 
+				regalar a alguien especial, nuestra librería en línea tiene todo lo que necesitas para satisfacer
+				tus necesidades literarias. ¡Explora nuestro catálogo y encuentra el libro perfecto para ti!</h6>
+	
+		
+
 	
 		</section>
 		
